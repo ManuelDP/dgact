@@ -1,0 +1,206 @@
+html{
+    font-size: 15px;
+}
+
+/*ESTILOS BLOQUE BIENVENIDOS*/
+.bienvenidos {
+    background: url("../images/fondo-bienvenidos.jpg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.logo{
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+  
+.navbar-fixed-top {
+    background: rgba(0, 0, 0, 0.75); 
+}
+  
+.navbar-light .navbar-brand {
+    color: #fdfdfd;
+    font-size: 1.3rem;
+    text-transform: uppercase; 
+}
+  
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.98); 
+}
+  
+.navbar-toggler {
+    font-size: 1.6rem;
+    color: #fff !important; 
+}
+  
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    text-align: center;
+    padding: .4rem;
+    text-transform: uppercase; 
+}
+  
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .open > .nav-link:focus, .navbar-light .navbar-nav .open > .nav-link:hover, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .active > .nav-link:focus, .navbar-light .navbar-nav .active > .nav-link:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover {
+    color: rgba(255, 255, 255, 0.95);
+    background: #F05F40; 
+}
+  
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    background: #F05F40; 
+}
+
+#menuprincipal{
+    clear: both;
+}
+
+.texto-bienvenido{
+    color: white;
+    padding-top: 6rem;
+}
+
+.btn-primary {
+    background-color: #F05F40;
+    border-color: #F05F40;
+    transition: all .5s ease;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #ef6f54;
+    border-color: #F05F40;
+}
+
+/*Estilos bloque quienes somos*/
+.quienes-somos{
+    background:  #F05F40;
+    color: #fff;
+}
+
+/*Estilos servicios*/
+.servicios{
+    background: #F9F1F1;
+}
+
+.servicios2{
+    background: #fff;
+    color: #424141;
+    F5F9EE
+}
+
+.servicios .fa{
+    color: #F05F40;
+    font-size: 6rem;
+}
+.servicios h3{
+    font-weight: bold;
+}
+.center-img{
+    max-width: 370px;
+}
+.text-sec{
+    padding-top: 30px;
+}
+
+.second-img{
+    max-width: 150px;
+}
+
+/*Estilos portafolio*/
+.portafolio{
+    background: #424141;
+    color: #fff;
+}
+
+.portafolio a{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.portafolio img{
+    transition: all .2s ease;
+    min-width: 100%;
+}
+
+.portafolio a:hover img{
+    transform: scale(1.5);
+}
+
+/*Estilos pie de pagina*/
+.footer{
+    color: #fff;
+    background: #222222;
+}
+
+/*Tam Carousel*/
+.tam-ima{
+    width: 500px;
+    height: 250px;
+}
+
+/*# Ventanas Modales*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 80%;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+/*Epiezan los media query*/
+@media(min-width: 768px){
+    #menuprincipal{
+        clear: inherit;
+    }
+    .bienvenidos {
+        background: url("../images/fondo-bienvenido-grande.jpg");
+        background-size: cover;
+    }
+}
